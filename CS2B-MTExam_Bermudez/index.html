@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilocos Sur - Home</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="header-hero">
+     <video class="header-video" autoplay muted loop playsinline poster="assets/Ilocos-Sur.jpg">
+  <source src="assets/pisti.mp4" type="video/mp4">
+</video>
+
+      <!-- Fallback image if video isn'tplayed -->
+      <img src="assets/Lucy’s_Antique_Shop_at_Calle_Crisologo,_Vigan.jpg" alt="Hero poster">
+    </video>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="assets/Ilocos-Sur-Provincial-Seal.png" alt="Logo" class="logo">
+      <ul>
+        <li><a href="index.html">Ilocos Sur</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header-title">
+    <h2>Discover the Beauty of Ilocos Sur</h2>
+  </div>
+</header>
+<!--carousell img-->
+<h1 class="featured">Featured</h1>
+  <section class="feature">
+    <div class="feature-carousel" id="featureCarousel" aria-roledescription="carousel">
+      <div class="carousel-track">
+        <div class="feature-slide" style="background-image:url('assets/feature/1.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/2.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/3.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/4.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/5.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/6.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/7.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/8.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/9.jpg')"></div>
+        <div class="feature-slide" style="background-image:url('assets/feature/10.jpg')"></div>
+      </div>
+
+      <div class="carousel-dots" role="tablist" aria-label="Feature slides"></div>
+
+      <!-- caption for Vigan Heritage Village -->
+      <div class="feature-caption" aria-hidden="false">
+        <h3>Vigan Heritage Village</h3>
+        <p>Step into history and explore the cobblestone streets of Vigan, a UNESCO World Heritage Site.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="spots">
+    <div class="spot-grid">
+      <article class="spot-card" style="background-image:url('assets/3_featured/Bantay_Watchtower_in_Bantay\,_Ilocos_Sur.jpg')">
+        <div class="spot-overlay">
+          <h3>Bantay Bell Tower</h3>
+          <p>An iconic landmark offering panoramic views of Vigan and nearby towns. Perfect for sightseeing and photography enthusiasts.</p>
+          <p class="tags">#BantayBellTower #Vigan #ScenicView</p>
+        </div>
+      </article>
+
+      <article class="spot-card" style="background-image:url('assets/3_featured/Calle_Crisologo\,_Vigan\,_Philippines_-_One_of_The_New_7_Wonder_Cities_of_The_World.jpg')">
+        <div class="spot-overlay">
+          <h3>Calle Crisologo</h3>
+          <p>Walk along this picturesque street lined with preserved Spanish-era houses, now filled with shops and cafes.</p>
+          <p class="tags">#CalleCrisologo #Vigan #Culture</p>
+        </div>
+      </article>
+
+      <article class="spot-card" style="background-image:url('assets/3_featured/caption.jpg')">
+        <div class="spot-overlay">
+          <h3>Pagburnayan Pottery</h3>
+          <p>Experience traditional pottery making in Vigan, where artisans craft jars using ancient methods passed down through generations.</p>
+          <p class="tags">#Pottery #Vigan #Handicraft</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+<!--products -->
+  <section class="products">
+    <h2>Local Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/products/ViganIMG_3737edited2_720x.webp" alt="Vigan Longganisa">
+            <h4>Vigan Longganisa</h4>
+            <p>₱150 / pack</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/bagnet.jpg" alt="Bagnet">
+            <h4>Bagnet</h4>
+            <p>₱250 / pack</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/Ilocos-Empanada-Wide.webp" alt="Vigan Empanada">
+            <h4>Vigan Empanada</h4>
+            <p>₱50 each</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/cornick.jpg" alt="Chichacorn">
+            <h4>Chichacorn</h4>
+            <p>₱100 / pack</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/ianbel.jpg" alt="Inabel Fabric">
+            <h4>Inabel Fabric</h4>
+            <p>₱500 / yard</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/burnay.jpg" alt="Burnay Pottery">
+            <h4>Burnay Pottery</h4>
+            <p>Handcrafted earthenware</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/weave.jpg" alt="Local Weave">
+            <h4>Local Weave</h4>
+            <p>₱350 / piece</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/baskets.jpg" alt="Handmade Basket">
+            <h4>Handmade Basket</h4>
+            <p>₱220 / piece</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/dried mango.jpg" alt="Dried Mangoes">
+            <h4>Dried Mangoes</h4>
+            <p>₱120 / pack</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/honey.jpg" alt="Local Honey">
+            <h4>Local Honey</h4>
+            <p>₱300 / jar</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/suka.webp" alt="Handwoven Mat">
+            <h4>Sukang Iloko</h4>
+            <p>₱100 / bottle</p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/products/tinubong4.jpg" alt="Traditional Snack">
+            <h4>Tinubong</h4>
+            <p>₱80/ piece </p>
+            <button class="add" onclick="addToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+  </section>
+
+</div>
+<!--footer-->
+<footer>
+  <p>&copy; 2025 Ilocos Sur Tourism | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

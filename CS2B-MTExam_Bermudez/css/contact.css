@@ -1,0 +1,201 @@
+/* =======================
+   RESET + GLOBAL STYLES
+=======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* =======================
+   HEADER + HERO VIDEO
+=======================*/
+header {
+  position: relative;
+}
+
+.header-hero {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 40px 80px rgba(0,0,0,0.45),
+              inset 0 -20px 60px rgba(0,0,0,0.25);
+  z-index: 1;
+}
+
+.header-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 90px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.header-title h2 {
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  font-size: 3rem;
+}
+
+/* Navbar over video but not sticky */
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 2;
+  background: rgba(0,0,0,0.35);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-left ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-left a:hover {
+  color: #ffeb99;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+/* =======================
+   CONTACT PAGE
+=======================*/
+.contact-page-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.contact-main {
+  flex: 4;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.map-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.map-info iframe {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+.aside {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.aside img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* =======================
+   FOOTER
+=======================*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+=======================*/
+@media (max-width: 768px) {
+  .contact-page-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 36px;
+  }
+}
