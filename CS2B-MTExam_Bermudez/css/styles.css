@@ -1,6 +1,4 @@
-/* =======================
-   RESET + GLOBAL STYLES
-==========================*/
+/* *ALL */
 * {
   margin: 0;
   padding: 0;
@@ -128,9 +126,9 @@ header {
   flex: 0 0 auto;
 }
 
-/* =======================
+/*
    HERO SECTION
-==========================*/
+*/
 
 /* Inline hero image behaves like a background layer */
 .hero-img {
@@ -142,7 +140,7 @@ header {
   z-index: 0;
 }
 
-/* carousel: only .active image is visible */
+/* carousel: only active image is visible */
 .hero-img {
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
@@ -164,15 +162,13 @@ header {
   margin: 0;
 }
 
-/* small adjustment so top title doesn't collide with navbar */
 header .header-title h2 {
   margin-top: 4px;
   line-height: 1.05;
 }
 
-/* =======================
-   SECTIONS
-==========================*/
+
+ /*  SECTIONS*/
 section {
   padding: 40px 20px;
 }
@@ -202,9 +198,7 @@ section h2 {
   flex: 1;
 }
 
-/* =======================
-   TOURIST SPOTS
-==========================*/
+/* TOURIST SPOTS*/
 .tourist-spot {
   display: flex;
   gap: 20px;
@@ -226,9 +220,7 @@ section h2 {
   font-size: 0.9rem;
 }
 
-/* =======================
-   PRODUCT GRID
-==========================*/
+/*  PRODUCT GRID*/
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -618,3 +610,4 @@ footer {
     margin: 20px 12px;
   }
 }
+
