@@ -1,6 +1,4 @@
-/* =======================
-   RESET + GLOBAL STYLES
-=======================*/
+/* * all */
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +18,7 @@ body {
   padding: 20px;
 }
 
-/* =======================
-   HEADER + HERO VIDEO
-=======================*/
+/* HEADER / HERO VIDEO*/
 header {
   position: relative;
 }
@@ -69,7 +65,7 @@ header {
   font-size: 3rem;
 }
 
-/* Navbar over video but not sticky */
+/* Navbar over video */
 .navbar {
   position: relative;
   display: flex;
@@ -107,9 +103,7 @@ header {
   width: auto;
 }
 
-/* =======================
-   CONTACT PAGE
-=======================*/
+/*CONTACT PAGE*/
 .contact-page-container {
   display: flex;
   gap: 20px;
@@ -176,9 +170,7 @@ header {
   margin-bottom: 15px;
 }
 
-/* =======================
-   FOOTER
-=======================*/
+/* FOOTER*/
 footer {
   text-align: center;
   padding: 20px;
@@ -187,9 +179,7 @@ footer {
   margin-top: 40px;
 }
 
-/* =======================
-   RESPONSIVE DESIGN
-=======================*/
+/* RESPONSIVE DESIGN*/
 @media (max-width: 768px) {
   .contact-page-container {
     flex-direction: column;
@@ -199,3 +189,4 @@ footer {
     height: 36px;
   }
 }
+
