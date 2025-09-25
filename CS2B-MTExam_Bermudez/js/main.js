@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       dotsContainer.appendChild(btn);
     });
     const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
-
+    // dot buttonn clicky thingy
     function goTo(index) {
       if (!slides.length) return;
       index = (index + slides.length) % slides.length;
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         d.setAttribute('aria-selected', i === index ? 'true' : 'false');
       });
     }
-
+      //autoplayyu
     function next() { goTo(current + 1); }
     function startTimer() { stopTimer(); timer = setInterval(next, autoplayInterval); }
     function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
@@ -59,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
 });
+
