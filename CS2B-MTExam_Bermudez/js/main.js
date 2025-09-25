@@ -53,14 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
     function resetTimer() { stopTimer(); startTimer(); }
 
-    // pause on hover/focus
-    carousel.addEventListener('mouseenter', stopTimer);
-    carousel.addEventListener('mouseleave', startTimer);
-    carousel.addEventListener('focusin', stopTimer);
-    carousel.addEventListener('focusout', startTimer);
-
     // init
     goTo(0);
     if (slides.length > 1) startTimer();
   })();
+
 });
