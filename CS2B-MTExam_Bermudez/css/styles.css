@@ -402,18 +402,6 @@ footer {
   font-size: 0.8rem;
   opacity: 0.85;
 }
-
-/* responsiveness */
-@media (max-width: 900px) {
-  .spot-grid { grid-template-columns: repeat(2, 1fr); }
-  .spot-card { min-height: 200px; }
-}
-
-@media (max-width: 480px) {
-  .spot-grid { grid-template-columns: 1fr; }
-  .spot-card { min-height: 160px; }
-  .spot-overlay h3 { font-size: 1.05rem; }
-}
 /* Featured intro above the carousel */
 .feature-intro {
   text-align: center;
@@ -459,4 +447,5 @@ footer {
   font-weight: 800;
   letter-spacing: 0.6px;
 }
+
 
