@@ -602,12 +602,3 @@ footer {
   font-weight: 800;
   letter-spacing: 0.6px;
 }
-@media (max-width: 768px) {
-  .fetured,
-  .featured {
-    font-size: 1.35rem;
-    padding: 12px 14px;
-    margin: 20px 12px;
-  }
-}
-
