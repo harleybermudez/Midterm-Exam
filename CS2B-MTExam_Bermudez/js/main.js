@@ -53,10 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
     function resetTimer() { stopTimer(); startTimer(); }
 
-    // init
+    // checks if ders one more slide
     goTo(0);
     if (slides.length > 1) startTimer();
   })();
 
 });
+
 
